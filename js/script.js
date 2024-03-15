@@ -21,7 +21,7 @@ if (debugMode) {
 	});
 } else {
 try {
-	const a = navigator.serviceWorker.register("/sw.js", { scope: "/", type: "module" })
+	const a = navigator.serviceWorker.register("./sw.js", {type: "module" })
 } catch (e) { console.error(e) }
 }
 
@@ -29,12 +29,12 @@ window.onload = () => {
 	var e = document.getElementById("login-form");
 	e && (e.onsubmit = e => {
 		e.preventDefault(),
-		fetch(new Request("/sw-login", { method: "POST", body: document.getElementById("password").value })),
+		fetch(new Request("./sw-login", { method: "POST", body: document.getElementById("password").value })),
 		location.href = (new URLSearchParams(location.search).get("rd") || "/") + `?debug=${debugMode}`;
 	}),
 		document.querySelectorAll("[data-plain]").forEach(l => {
 			fetch(l.dataset.plain)
-				.then(e => (401 == e.status && !debugMode && (location.href = `/login.html?rd=${location.pathname}&error=true`), e.text()))
+				.then(e => (401 == e.status && !debugMode && (location.href = `./login.html?rd=${location.pathname}&error=true`), e.text()))
 				.then(e => { l.innerHTML = e })
 		})
 };
