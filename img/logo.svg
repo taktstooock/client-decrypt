@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 803.013 786.595" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="レイヤー-2" vectornator:layerName="レイヤー 2">
+<path d="M0 393.298C0 176.085 179.761 0 401.506 0C623.252 0 803.013 176.085 803.013 393.298C803.013 610.51 623.252 786.595 401.506 786.595C179.761 786.595 0 610.51 0 393.298Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="楕円形 1"/>
+</g>
+<g id="レイヤー-1" vectornator:layerName="レイヤー 1">
+<g fill="#ffffff" opacity="1" stroke="none" vectornator:layerName="テキスト 1">
+<path d="M334.222 339.681L139.35 454.706C132.091 459.173 129.299 465.315 129.299 472.015C129.299 475.924 130.416 480.391 132.091 484.3C136 492.117 142.7 498.259 151.634 498.259C154.984 498.259 158.334 497.142 161.685 494.909L367.166 370.95C380.567 363.132 387.826 355.315 387.826 340.239C387.826 324.604 380.567 316.787 366.608 307.853L161.685 185.569C158.334 183.336 154.426 182.219 151.076 182.219C142.7 182.219 135.441 188.92 132.091 196.178C130.416 200.087 129.299 204.554 129.299 208.463C129.299 215.163 132.091 221.305 139.35 225.772L334.222 339.681Z"/>
+<path d="M414.07 549.071L414.07 579.781L693.257 579.781L693.257 549.071L414.07 549.071Z"/>
+</g>
+</g>
+</svg>
