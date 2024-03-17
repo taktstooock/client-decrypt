@@ -40,7 +40,7 @@ window.onload = () => {
 	e && (e.onsubmit = e => {
 		e.preventDefault(),
 		fetch(new Request("./sw-login", { method: "POST", body: document.getElementById("password").value })),
-		location.href = (new URLSearchParams(location.search).get("rd") || "/") + `?debug=${debugMode}`;
+		location.href = (new URLSearchParams(location.search).get("rd") || "./") + `?debug=${debugMode}`;
 	}),
 		document.querySelectorAll("[data-plain]").forEach(l => {
 			fetch(l.dataset.plain)
