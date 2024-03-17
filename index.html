@@ -3,17 +3,119 @@
 
 <head>
   <meta charset="utf-8">
-    <title data-plain="./contents/site-title.txt-e"></title>
-    
+  <title data-plain="./contents/site-title.txt-e"></title>
+
   <meta name="robots" content="noindex,nofollow">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="./img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <script type="module" src="./js/script.js"></script>
+  <style>
+    .wrap {
+      background-image: url("./img/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      color: aliceblue;
+    }
+
+    .content {
+      width: 100%;
+      max-width: min(95vw, 600px);
+      margin: 0 auto;
+      padding: 16px;
+      background-color: #000000d0;
+      border-radius: 10px;
+    }
+
+    .wrap main {
+      height: 100%;
+      min-height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.267);
+      padding: 25px;
+    }
+
+    .heading-lv1 {
+      font-size: 32px;
+      font-style: italic;
+    }
+
+    .heading-lv2 {
+      font-size: 24px;
+    }
+
+    .heading-lv2 span {
+      display: inline-block;
+      max-width: 100%;
+      word-break: break-all;
+    }
+
+    .heading-lv3 {
+      font-size: 20px;
+    }
+
+    .heading-margin {
+      margin-top: 32px;
+    }
+
+    .text {
+      margin: 16px 0 0;
+      font-size: 16px;
+      line-height: 1.5;
+      word-break: break-all;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .profile-image {
+      margin: 16px 0 0;
+      text-align: center;
+    }
+
+    .profile-image img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .list {
+      width: max-content;
+      max-width: 100%;
+      margin: auto;
+      padding-left: 16px;
+      text-align: left;
+      word-break: break-all;
+    }
+  </style>
 </head>
 
-<body>
-  hello, world
+<body class="wrap">
+  <main>
+    <div class="content">
+      <h1 class="heading-lv1 text-center">Profile</h1>
+      <figure class="profile-image">
+        <img src="./contents/profile.jpg-e" alt="profile image" width="300" height="300">
+      </figure>
+
+      <h2 class="heading-lv2 heading-margin text-center">Name:<br><span data-plain="./contents/name.txt-e"></span></h2>
+      <p class="text text-center" data-plain="./contents/introduction.txt-e"></p>
+
+      <h3 class="heading-lv3 heading-margin text-center">Birthday</h3>
+      <p class="text text-center" data-plain="./contents/birthday.txt-e"></p>
+
+      <h3 class="heading-lv3 heading-margin text-center">Hobbies</h3>
+      <ul class="list">
+        <li data-plain="./contents/hobbies1.txt-e"></li>
+        <li data-plain="./contents/hobbies2.txt-e"></li>
+      </ul>
+
+      <p class="text text-center"><a href="./login.html" style="color: #c9c9c9;">login page</a></p>
+      <p class="text text-center"><a href="https://github.com/taktstooock/client-decrypt" target="_blank" style="color: #7a7a7a;">source code</a></p>
+    </div>
+  </main>
 </body>
 
 </html>

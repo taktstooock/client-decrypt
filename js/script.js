@@ -5,14 +5,24 @@ if (logo) {
 	logo.addEventListener('click', () => {
 		debugMode = !debugMode;
 		console.log('Debug mode is ' + (debugMode ? 'enabled' : 'disabled') + '.');
-		// const url = new URL(location.href);
-		// url.searchParams.set('debug', !debugMode);
-		// location.replace(url.toString());
+		if (debugMode) {
+			console.log('delete Service Worker.');
+			// デバッグモードの場合はService Workerを削除する
+			navigator.serviceWorker.getRegistrations().then(registrations => {
+				for (let registration of registrations) {
+					registration.unregister();
+				}
+			});
+		} else {
+		try {
+			const a = navigator.serviceWorker.register("./sw.js", {type: "module" })
+		} catch (e) { console.error(e) }
+		}
 	});
 }
 
 if (debugMode) {
-	console.log('Debug mode is enabled.');
+	console.log('delete Service Worker.');
 	// デバッグモードの場合はService Workerを削除する
 	navigator.serviceWorker.getRegistrations().then(registrations => {
 		for (let registration of registrations) {
